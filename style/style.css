@@ -1,0 +1,131 @@
+body{
+    font-family: 'poppins',sans-serif;
+    background-color: #fff;
+}
+header {
+    background-color: #800040;
+    text-align: center;
+    padding: 5px 0 0;
+    transition: all 0.5s;
+    z-index: 997;
+}
+h1 {
+    font-size: 50px;
+    margin: 0;
+    color: azure;
+}
+header img{
+    height: 50px;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+nav li {
+    position: relative;
+    padding-right: 0;
+    backdrop-filter: blur(25px);
+}
+nav a{
+    padding: 18px 15px;
+    color: beige;
+    font-size: 16px;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition: 0.3s;
+    margin-left: 5px;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #ca0065;
+}
+footer {
+    background-color: #800040;
+    padding-top: 20px;
+}
+main {
+    display: flex;
+    gap: 1.5rem;
+    padding: 25px;
+}
+aside {
+    flex: 1;
+}
+.profile {
+    text-align: center;
+}
+.profile img{
+    width: 150px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 #460023;
+    border-radius: 5px;
+    padding: 20px;
+    flex: 5;
+}
+.wisata img {
+    display: inline-table;
+    width: 200px;
+    aspect-ratio: 1/1;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.wisata p{
+    margin: 0;
+    padding: 0;
+    padding: 10px 10px;
+    font-size: 16px;
+    justify-content: space-between;
+    margin-left: 5px;
+}
+.profile-card{
+    text-align: center;
+}
+aside table {
+    display: center;
+    margin-top: 20px;
+}
+.container {
+    margin: auto;
+    display: list-item;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    padding: 7px;
+}
+.container h1 {
+    font-size: 30px;
+}
+.bottom {
+    background-color: #ca0065;
+    margin: 0;
+    font-size: 15px;
+    padding: 7px;
+    text-align: center;
+}
+@media screen and (max-width: 1200px) {
+    nav {
+        align-items: center;
+    }
+    main {
+      flex-flow: column nowrap;
+      text-align: center;
+    }
+    main aside {
+      align-self: center;
+    }
+  }
+  
+  @media screen and (max-width: 760px) {
+    nav ul {
+      justify-content: center;
+    }
+    main aside {
+      align-self: stretch;
+    }
+  }
