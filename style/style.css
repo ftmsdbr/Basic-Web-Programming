@@ -108,11 +108,3 @@ aside table {
     padding: 7px;
     text-align: center;
 } 
-  @media screen and (max-width: 760px) {
-    nav ul {
-      justify-content: center;
-    }
-    main aside {
-      align-self: stretch;
-    }
-  }
